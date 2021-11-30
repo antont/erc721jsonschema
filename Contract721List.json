@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "Contract721List",
+  "title": "Contract721List",
+  "type": "array",
+  "items": {"$ref": "file:Contract721.json"}
+}

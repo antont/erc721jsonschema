@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "id": "Contract721",
+    "title": "Contract721",
+    "type": "object",
+    "properties": {
+        "id": {
+          "type": "string"
+        },
+        "customerId": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "network": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "symbol": {
+            "type": ["string", "null"]
+        },
+        "metadata": {
+            "$ref": "file:Metadata721.json"
+        },
+        "url": {
+            "type": ["string", "null"]
+        },
+        "status": {
+            "type": ["string", "null"]
+        },
+        "address": {
+            "type": ["string", "null"]
+        },        
+        "txHash": {
+            "type": ["string", "null"]
+        },
+        "data": {
+            "type":  ["string", "null"]
+        },        
+        "created_at": {
+            "type": "string",
+            "format": "date-time"
+        },        
+        "updated_at": {
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "required": ["id", "customerId", "network"]
+}
